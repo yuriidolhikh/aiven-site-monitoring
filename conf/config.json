@@ -1,0 +1,29 @@
+{
+    "persistence": {
+        "kafka": {
+            "uri": "",
+            "topic": "site-availability"
+        },
+        "postgres": {
+            "host": "",
+            "port": "",
+            "user": "",
+            "password": "",
+            "dbname": ""
+        }
+    },
+    "monitoring": {
+        "http://example.com": {
+            "interval": 60,
+            "regex": null
+        },
+        "http://google.com": {
+            "interval": 180,
+            "regex": "html"
+        },
+        "https://aiven.io": {
+            "interval": 30,
+            "regex": "no match"
+        }
+    }
+}

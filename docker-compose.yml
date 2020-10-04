@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  producer:
+    container_name: aiven-producer
+    build: .
+    volumes:
+     - .:/code
+    command: "python aiven/producer.py"
+
+  consumer:
+    container_name: aiven-consumer
+    build: .
+    volumes:
+     - .:/code
+    command: "python aiven/consumer.py"
